@@ -1,0 +1,36 @@
+{
+  "Environment": {
+    "Type": "Grid2D",
+    "Size": {
+      "Rows": 20,
+      "Columns": 20
+    }
+  },
+  "Agents": [
+    {
+      "Name": "Car",
+      "Type": "TrafficSim.Car",
+      "Amount": 5,
+      "Properties": {
+        "SpeedLimit": 3,
+        "MaxAccel": 1,
+        "MaxBrake": 1
+      }
+    },
+    {
+      "Name": "TrafficLight",
+      "Type": "TrafficSim.TrafficLight",
+      "Amount": 2,
+      "Properties": {
+        "Auto": true,
+        "GreenLength": 10,
+        "YellowLength": 3
+      }
+    },
+    {
+      "Name": "Accident",
+      "Type": "TrafficSim.Accident",
+      "Amount": 1
+    }
+  ]
+}
