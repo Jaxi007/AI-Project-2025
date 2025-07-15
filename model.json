@@ -9,7 +9,7 @@
   "Agents": [
     {
       "Name": "Car",
-      "Type": "TrafficSim.Car",
+      "Type": "TrafficSimulation.Car",
       "Amount": 5,
       "Properties": {
         "SpeedLimit": 3,
@@ -19,7 +19,7 @@
     },
     {
       "Name": "TrafficLight",
-      "Type": "TrafficSim.TrafficLight",
+      "Type": "TrafficSimulation.Car",
       "Amount": 2,
       "Properties": {
         "Auto": true,
@@ -29,7 +29,7 @@
     },
     {
       "Name": "Accident",
-      "Type": "TrafficSim.Accident",
+      "Type": "TrafficSimulation.Car",
       "Amount": 1
     }
   ]
