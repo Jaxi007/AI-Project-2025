@@ -14,7 +14,7 @@ namespace TrafficSimulation
             // Create a runner and run the simulation
             var runner = SimulationStarter.Start(description);
 
-            // Optionally run all steps or limit ticks
+            //Run ticks
             runner.Run(100); // Run 100 ticks
         }
     }
