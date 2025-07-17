@@ -1,4 +1,4 @@
-using Mars.Core.Simulation;
+using Mars.Components.Starter;
 using Mars.Interfaces.Model;
 using System;
 
@@ -8,14 +8,10 @@ namespace TrafficSimulation
     {
         static void Main(string[] args)
         {
-            // Load the model from your model.json configuration
             var description = SimulationDescription.Load("model.json");
-
-            // Create a runner and run the simulation
-            var runner = SimulationStarter.Start(description);
-
-            //Run ticks
-            runner.Run(100); // Run 100 ticks
+            var starter = SimulationStarter.Start(description);
+            var result = starter.Run();
+            Console.WriteLine($"Simulation finished after {result.Tick} ticks.");
         }
     }
 }

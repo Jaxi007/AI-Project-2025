@@ -1,36 +1,49 @@
 {
-  "Environment": {
-    "Type": "Grid2D",
-    "Size": {
-      "Rows": 20,
-      "Columns": 20
+  "Layers": [
+    {
+      "Name": "CarLayer",
+      "Type": "Mars.Components.Environments.Grid2DLayer`1[[TrafficSimulation.Car, TrafficSimulation]]",
+      "CellSize": 1.0,
+      "Width": 50,
+      "Height": 50
+    },
+    {
+      "Name": "TrafficLightLayer",
+      "Type": "Mars.Components.Environments.Grid2DLayer`1[[TrafficSimulation.TrafficLight, TrafficSimulation]]",
+      "CellSize": 1.0,
+      "Width": 50,
+      "Height": 50
+    },
+    {
+      "Name": "AccidentLayer",
+      "Type": "Mars.Components.Environments.Grid2DLayer`1[[TrafficSimulation.Accident, TrafficSimulation]]",
+      "CellSize": 1.0,
+      "Width": 50,
+      "Height": 50
     }
-  },
+  ],
   "Agents": [
     {
-      "Name": "Car",
+      "Name": "Cars",
       "Type": "TrafficSimulation.Car",
-      "Amount": 5,
-      "Properties": {
-        "SpeedLimit": 3,
-        "MaxAccel": 1,
-        "MaxBrake": 1
-      }
+      "Layer": "CarLayer",
+      "Amount": 20
     },
     {
-      "Name": "TrafficLight",
-      "Type": "TrafficSimulation.Car",
-      "Amount": 2,
-      "Properties": {
-        "Auto": true,
-        "GreenLength": 10,
-        "YellowLength": 3
-      }
+      "Name": "Lights",
+      "Type": "TrafficSimulation.TrafficLight",
+      "Layer": "TrafficLightLayer",
+      "Amount": 5
     },
     {
-      "Name": "Accident",
-      "Type": "TrafficSimulation.Car",
-      "Amount": 1
+      "Name": "Accidents",
+      "Type": "TrafficSimulation.Accident",
+      "Layer": "AccidentLayer",
+      "Amount": 2
     }
-  ]
+  ],
+  "Scheduler": {
+    "Type": "Mars.Core.Simulation.SimpleScheduler",
+    "StopAfterTicks": 100
+  }
 }

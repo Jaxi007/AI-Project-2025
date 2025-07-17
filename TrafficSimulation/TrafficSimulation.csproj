@@ -6,9 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Mars.Core" Version="1.9.0" />
-    <PackageReference Include="Mars.Interfaces" Version="1.9.0" />
-    <PackageReference Include="Mars.Components" Version="1.9.0" />
+    <PackageReference Include="Mars.Common" Version="4.2.0" />
+    <PackageReference Include="Mars.Core" Version="4.2.0" />
+    <PackageReference Include="Mars.Interfaces" Version="4.2.0" />
+    <PackageReference Include="Mars.Components" Version="4.2.0" />
   </ItemGroup>
 
 </Project>
