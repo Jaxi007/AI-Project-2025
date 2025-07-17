@@ -2,14 +2,13 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Mars.core" Version="5.3.1" />
-    <PackageReference Include="Mars.Interfaces" Version="5.3.1" />
+    <PackageReference Include="Mars.Core" Version="1.9.0" />
+    <PackageReference Include="Mars.Interfaces" Version="1.9.0" />
+    <PackageReference Include="Mars.Components" Version="1.9.0" />
   </ItemGroup>
 
 </Project>
