@@ -46,6 +46,16 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Mars.Interfaces": {
+              "target": "Package",
+              "version": "[5.3.1, )"
+            },
+            "Mars.core": {
+              "target": "Package",
+              "version": "[5.3.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

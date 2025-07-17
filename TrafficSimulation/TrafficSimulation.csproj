@@ -7,4 +7,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Mars.core" Version="5.3.1" />
+    <PackageReference Include="Mars.Interfaces" Version="5.3.1" />
+  </ItemGroup>
+
 </Project>
